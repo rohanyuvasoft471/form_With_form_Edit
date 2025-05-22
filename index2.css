@@ -1,0 +1,170 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+}
+
+a {
+  font-weight: 500;
+  color: rgb(100, 108, 255);
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgb(83, 91, 242);
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+form {
+  border: 1px solid black;
+  background-color: bisque;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 360px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: black;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  border: 1px solid hsl(0, 0%, 60%);
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+form textarea {
+  height: 70px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.option-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(26, 26, 26);
+  color: cadetblue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0.3rem;
+}
+button:hover {
+  border-color: rgb(136, 137, 228);
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 95%;
+  max-width: 900px;
+  background-color: #fdf6e3;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: rgb(100, 108, 255);
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: rgb(60, 60, 60);
+    background-color: white;
+  }
+
+  button {
+    background-color: cadetblue;
+    color: #000;
+  }
+  button:hover{
+    background-color: rgb(128, 243, 247);
+  }
+  table {
+    background-color: whitesmoke;
+  }
+
+  table th {
+    background-color: bisque;
+    color: black;
+  }
+}
+table input[type="text"] {
+  width: 100px;
+  max-width: 100%;
+  font-size: 13px;
+  padding: 4px;
+  box-sizing: border-box;
+}
