@@ -10,15 +10,11 @@ export default function SpaceShipconfigurator() {
   const basePrice = 1000;
 
   const colorPrices = {
-    Snow: 0,
-    Volcano: 100,
-    Sky: 100,
+    Snow: 0, Volcano: 100, Sky: 100,
   };
 
   const powerPrices = {
-    "100": 0,
-    "150": 200,
-    "200": 500,
+    "100": 0, "150": 200, "200": 500,
   };
 
   const warpDrivePrices = {
