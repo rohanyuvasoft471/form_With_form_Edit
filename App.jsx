@@ -2,13 +2,14 @@ import { Component } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Form from "./formValidation";
-import FormPart2 from "./components/form.jsx";
-import Table from "./components/table.jsx";
+import FormEdit from "./ComponentsPart2/Form2.jsx";
+import TableEdit from "./ComponentsPart2/Table2.jsx";
 // import { useState } from "react";
 // import ChatRoom from "./ChatRoom";
 // import Counter from "./App2";
 // import Gallary from "./App3";
 // import PackingList from "./App4";
+import SpaceShipconfigurator from "./SpaceShipConfigurator.jsx";
 import Image from "./image.jsx";
 import Form2 from "./formValidationPart2.jsx";
 // class Greeting extends Component{
@@ -21,8 +22,9 @@ export default function App(){
 //   const[roomId,setRoomId]=useState('general');
 //   const[show,setShow]=useState(false);
   return (
-    <Router>
-    <Routes>
+    <>
+    {/* <Router>
+    <Routes> */}
     {/* <Greeting name="Sara"/>
     <Greeting name="Binod"/>
     <Greeting name="Vikram"/>
@@ -44,10 +46,13 @@ export default function App(){
     <Gallary/> */}
     {/* <PackingList/> */}
     {/* <Form/> */}
-    <Route path="/" element={<FormPart2 />} />
-    <Route path="/table" element={<Table />} />
-    {/* <Image/> */}
-    </Routes>
-    </Router>
-  )
+    {/* <Route path="/:id" element={<FormEdit />} />
+    <Route path="/" element={<FormEdit />} />
+    <Route path="/table" element={<TableEdit />} /> */}
+  {/* </Routes>
+  </Router> */}
+      {/* <Form/> */}
+    <SpaceShipconfigurator/>
+   </>
+  );
 }
